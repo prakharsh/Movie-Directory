@@ -1,0 +1,10 @@
+.card{
+    margin:0px ;
+    font-size: 15px;
+    height: 86vh;
+}
+.card_img{
+    height:70vh;
+    width:100% ;
+    margin:0px ;
+}

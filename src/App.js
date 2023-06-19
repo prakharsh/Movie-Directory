@@ -1,24 +1,53 @@
-import logo from './logo.svg';
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import {BrowserRouter,Routes,Route} from 'react-router-dom' ;
+import Home from './components/Home'
+import Login from './components/Login.js'
+import Register from './components/Register.js'
+import About from './components/About.js'
+import Favorites from './components/Favorites.js'
+import ProtectedRoute from "./components/ProtectedRoute";
+import { UserAuthContextProvider } from "./contexts/AuthContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+          <UserAuthContextProvider>
+          <Routes>
+              <Route
+                exact path="/"
+                element={
+                  <ProtectedRoute>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
+               <Route
+                exact path="/about"
+                element={
+                
+                  <ProtectedRoute>
+                    <About />
+                  </ProtectedRoute>
+                 
+                }
+              />
+              <Route
+                exact path="/favorites"
+                element={
+                 
+                  <ProtectedRoute>
+                    <Favorites />
+                  </ProtectedRoute>
+                }
+              />
+              <Route exact path="/login" element={<Login />} />
+              <Route exact path="/register" element={<Register />} />
+              </Routes>
+        
+          </UserAuthContextProvider>
+     </BrowserRouter>
   );
 }
 

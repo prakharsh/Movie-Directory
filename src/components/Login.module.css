@@ -1,0 +1,75 @@
+.page{
+    background-image:url( "../../public/bgimg.jpeg") ;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-repeat:no-repeat; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.login_block{
+    height:40% ;
+    padding: 20px ;
+    background-color:whitesmoke;
+    border-radius: 20px;
+}
+.logo_par{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height:50px ;
+    width:50px ;
+    margin: 10px;
+}
+h3{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.email_par{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px ;
+    height:20% ;
+}
+.password_par{
+    height: 20%;
+}
+label{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+}
+.input_box{
+    border-radius: 5px;
+    width:80% ;
+    height: 50%;
+    font-size: 15px;
+}
+.login_btn{
+    position: relative;
+    top:20px ;
+    left:0px ;
+    font-size: 13px;
+}
+.dummyLogin_btn{
+    position: relative;
+    top:20px ;
+    left:50px ;
+    font-size: 13px;
+}
+.register{
+    position: relative;
+    top:30px ;
+    font-size: 15px;
+}
+@media ( max-width:1000px) {
+    .login_block{
+        height: 45%;
+        max-height: 300px;
+    }
+}

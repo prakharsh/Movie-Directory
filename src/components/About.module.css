@@ -1,0 +1,22 @@
+.img{
+    height:70vh ;
+    width:calc(100% - 2px) ;
+    margin:0px 1px ;
+}
+td{
+    font-size:18px ;
+}
+
+.title,.overview{
+    margin:10px ;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.overview{
+    font-size: 18px;
+}
+.info_wrapper{
+    margin: 20px;
+}
