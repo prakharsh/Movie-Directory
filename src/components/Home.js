@@ -126,7 +126,7 @@ function Home() {
    }
    if(pgLoading || curLoading)return <h1>Loading Movies...</h1>
   return (
-    <>
+    <div>
     <Navbar/>
     <Dropdown onSelect={selected} className={styles.dropdown}>
       <Dropdown.Toggle variant="success" id="dropdown-basic" className={styles.dropdown_banner}>
@@ -194,7 +194,10 @@ function Home() {
               </li>
             </ul>
         </nav>
-        </>
+        <footer className={styles.footer}>
+          <span><h4>Copyright &copy;  - Prakhar Sharma</h4></span>
+        </footer>
+        </div>
   )
 }
 

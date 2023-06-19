@@ -50,6 +50,9 @@ function Auth() {
     <button type="button" className={`btn btn-primary ${styles.register_btn}`} onClick={handleSubmit}>Register</button>
     <div className={styles.login}>Already have an account? <Link to="/"> Log IN</Link> </div>
     </div>
+    <footer className={styles.footer}>
+        <span><h4>Copyright &copy;  - Prakhar Sharma</h4></span>
+    </footer>
     </div>
   )
 }

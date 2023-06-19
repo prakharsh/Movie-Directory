@@ -20,3 +20,8 @@ td{
 .info_wrapper{
     margin: 20px;
 }
+.footer{
+    color: rgb(87, 87, 87) ;
+    display: flex;
+    align-items: center;
+}

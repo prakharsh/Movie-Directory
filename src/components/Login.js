@@ -47,6 +47,9 @@ function Login() {
             <Link to="/register">Register</Link> 
         </div>
       </div>
+      <footer className={styles.footer}>
+            <span><h4>Copyright &copy;  - Prakhar Sharma</h4></span>
+      </footer>
     </div>
   )
 }

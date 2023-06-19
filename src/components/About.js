@@ -37,6 +37,9 @@ function About() {
             </tbody>
         </table>
         </div>
+        <footer className={styles.footer}>
+          <span><h4>Copyright &copy;  - Prakhar Sharma</h4></span>
+        </footer>
     </>
   )
 }
