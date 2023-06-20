@@ -33,10 +33,10 @@ function Navbar() {
       <Link to='/'>
       <img className={styles.logo} src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" />
       </Link>
-      <Link to='/' className={styles.link}>
+      <Link to='/' className={styles.link_hm}>
       <div className={styles.heading}>Movie Directory</div>
       </Link>
-      <Link to='/Favorites' className={styles.link}>
+      <Link to='/Favorites' className={styles.link_fv}>
       <div className={styles.fvt}>Favorites</div>
       </Link>
       <div className={styles.username}>{username}</div>

@@ -28,9 +28,10 @@
     top:5px ;
     text-decoration: none!important;
 }
-.link{
+.link_fv,.link_hm{
     text-decoration: none!important;
     color: inherit!important;
+    text-align: center;
 }
 .username{
     font-size: 20px ;

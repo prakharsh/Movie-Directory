@@ -47,8 +47,6 @@
     color: rgb(87, 87, 87) ;
     display: flex;
     align-items: center;
-    position: absolute;
-    
 }
    @media ( max-width:1000px) {
        .rmv_btn{
