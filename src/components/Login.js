@@ -13,15 +13,16 @@ function Login() {
       e.preventDefault();
       try {
         await logIn(email, password);
-        navigate("/");
+        navigate("/home");
       } catch (err) {
+        console.log(err)
         window.alert("Incorrect Email or Password or else Account doesn't Exist")
       }
     };
     async function dummyLogin(){
       try {
         await logIn("dummy@gmail.com", "dummy123");
-        navigate("/");
+        navigate("/home");
       } catch (err) {
         console.log("dummy login not working") ;
       }

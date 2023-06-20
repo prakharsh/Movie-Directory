@@ -14,7 +14,7 @@ function Navbar() {
     localStorage.setItem('pageno',1) ;
     try {
       await logOut();
-      navigate("/login");
+      navigate("/");
     } catch (err) {
       window.alert("Error Logging Out")
     }
@@ -30,10 +30,10 @@ function Navbar() {
 },[])
   return (
     <nav className={styles.navbar}>
-      <Link to='/'>
+      <Link to='/home'>
       <img className={styles.logo} src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" />
       </Link>
-      <Link to='/' className={styles.link_hm}>
+      <Link to='/home' className={styles.link_hm}>
       <div className={styles.heading}>Movie Directory</div>
       </Link>
       <Link to='/Favorites' className={styles.link_fv}>

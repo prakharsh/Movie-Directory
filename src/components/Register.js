@@ -23,9 +23,10 @@ function Auth() {
       console.log(uid);
       const docRef = doc(db, "users", uid );
       setDoc(docRef,{username:name, email:email, movies:[]})
-      navigate("/login");
+      navigate("/");
     } catch (err) {
-        window.alert("Invalid email or Password")
+       console.log(err)
+        window.alert("Invalid email or Password or else Account already Exists")
     }
   };
   return (
