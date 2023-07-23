@@ -25,3 +25,8 @@ td{
     display: flex;
     align-items: center;
 }
+.trailer{
+    height:70vh ;
+    width:calc(100% - 2px) ;
+    margin:0px 1px ;
+}

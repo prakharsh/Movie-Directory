@@ -39,7 +39,8 @@ function Home() {
                         genre_id:obj.genre_ids[0],
                         popularity:obj.popularity,
                         vote_average:obj.vote_average,
-                        vote_count:obj.vote_count
+                        vote_count:obj.vote_count,
+                        movie_id:obj.id
                 })
             }).toString()
         })
