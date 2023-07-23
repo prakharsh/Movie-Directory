@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
@@ -13,6 +14,7 @@ function About() {
                         27:'Horror',10402:'Music',9648:'Mystery',10749:'Romance',878:'Sci-Fi',10770:'TV',53:'Thriller',10752:'War',37:'Western'}
     
     useEffect(()=>{
+      // to get the key for trailer on youtube
       (async function geturl(){
             const cur_url=await axios.get(`https://api.themoviedb.org/3/movie/${obj.movie_id}/videos?api_key=c95c3f93fd57be482438e2e63ab64048`) 
             const trailer_arr=cur_url.data.results ;
@@ -33,7 +35,6 @@ function About() {
         <div className={styles.title}>{obj.title}</div>
         <div className={styles.overview}>{obj.overview}</div>
         <iframe className={styles.trailer} src={`https://www.youtube-nocookie.com/embed/${url}`}
-                frameBorder="0"
                 allow='autoplay; encrypted-media ; fullscreen'
                 title='video'
         />
